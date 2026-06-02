@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>冬的个人网页</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <main class="page">
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="./assets/dong.svg" alt="冬" />
+      </div>
+
+      <nav class="nav-links">
+        <a class="active" href="#home">首页</a>
+        <a href="#about">关于我</a>
+        <a href="#projects">个人项目</a>
+        <a href="#contact">联系方式</a>
+      </nav>
+    </header>
+
+    <!-- 首页首屏 -->
+    <section class="hero" id="home">
+      <!-- 左侧文字 -->
+      <div class="hero-text">
+        <h1>
+          欢迎来到
+          <br />
+          我的个人网页
+        </h1>
+
+        <div class="hero-divider">
+          <span>✣</span>
+          <i></i>
+        </div>
+
+        <p>地理空间信息工程专业｜探索空间数据，理解世界格局</p>
+
+        <a class="hero-button" href="#about">
+          了解更多
+          <span>→</span>
+        </a>
+      </div>
+
+      <!-- 右侧电脑人 -->
+      <div class="figure">
+        <img class="figure-body" src="./assets/body.png" alt="电脑人身体" />
+        <img class="figure-head" src="./assets/computer-head.png" alt="电脑人头部" />
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about-section section" id="about">
+        <div class="about-badge-wrap">
+            <div class="badge-swing">
+                <img class="badge-base" src="./assets/badge-base.png" alt="个人工牌" />
+
+                <div class="badge-content">
+                    <div class="badge-avatar-wrap">
+                        <img class="badge-avatar" src="./assets/avatar.jpg" alt="朱顺浩的照片" />
+                    </div>
+
+                    <div class="badge-info">
+                        <h3 class="badge-name">朱顺浩</h3>
+
+                        <div class="badge-metrics">
+                            <div class="metric-row">
+                                <span class="metric-icon icon-gpa">
+                                    <img src="./assets/icons/icon-gpa.svg" alt="GPA" />
+                                </span>
+                                <span class="metric-label">GPA</span>
+                                <span class="metric-value">3.96 /5.0 </span>
+                            </div>
+
+                            <div class="metric-row">
+                                <span class="metric-icon icon-rank">
+                                    <img src="./assets/icons/icon-rank.svg" alt="专业排名" />
+                                </span>
+                                <span class="metric-label">专业排名</span>
+                                <span class="metric-value"> 3/55 </span>
+                            </div>
+
+                            <div class="metric-row">
+                                <span class="metric-icon icon-cet4">
+                                    <img src="./assets/icons/icon-cet4.svg" alt="CET-4" />
+                                </span>
+                                <span class="metric-label">CET-4</span>
+                                <span class="metric-value">560</span>
+                            </div>
+
+                            <div class="metric-row">
+                                <span class="metric-icon icon-cet6">
+                                    <img src="./assets/icons/icon-cet6.svg" alt="CET-6" />
+                                </span>
+                                <span class="metric-label">CET-6</span>
+                                <span class="metric-value">473</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h2>关于我</h2>
+
+            <div class="about-title-line">
+                <span></span>
+                <i></i>
+                <em>⌁</em>
+            </div>
+
+            <p>
+            本人就读于中国地质大学（武汉）地理与信息工程学院地理空间信息工程专业，主要关注地理空间数据处理、遥感分类、空间网络分析、WebGIS 可视化等方向。本人注重理论与实践结合，正在积极探索城市空间分析和三维实景建模应用
+            </p>
+
+            <div class="about-quote">
+                <div class="quote-mark">“</div>
+
+                <div class="quote-text">
+                    <strong>探索自然 · 挖掘信息 · 洞悉变化</strong>
+                    <span>以空间思维理解世界，用技术能力创造价值</span>
+                </div>
+
+                <div class="quote-compass">✦</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个人项目部分 -->
+    <section class="projects-section section" id="projects">
+        <div class="projects-inner">
+            <div class="projects-heading">
+                <div class="heading-line"></div>
+                <h2>个人项目</h2>
+                <div class="heading-line"></div>
+            </div>
+
+        <!-- 项目一：左文字，右图示 -->
+        <article class="project-item project-text-left">
+            <div class="project-copy">
+                <div class="project-head">
+                    <h3>湖泊湿地水生植被多源遥感分类与监测</h3>
+
+                    <div class="project-tags">
+                        <span>Sentinel-1</span>
+                        <span>Sentinel-2</span>
+                        <span>CART</span>
+                        <span>PyTorch</span>
+                        <span>CNN</span>
+                    </div>
+                </div>
+
+                <p>
+                    融合 Sentinel-1 雷达影像与 Sentinel-2 光学影像，构建多源遥感特征集，结合 CART 决策树与深度学习模型，实现湖泊湿地水生植被的精细分类与时序监测。项目面向复杂水域环境下的植被识别与变化分析，为湿地生态评估与保护提供数据支撑。
+                </p>
+            </div>
+
+            <div class="project-visual">
+                <img src="./assets/projects/project-wetland.png" alt="湖泊湿地水生植被多源遥感分类与监测项目图" />
+            </div>
+        </article>
+
+        <!-- 项目二：左图示，右文字 -->
+        <article class="project-item project-image-left">
+            <div class="project-visual">
+                <img src="./assets/projects/project-business.png" alt="城市商业活力分析与预测项目图" />
+            </div>
+
+            <div class="project-copy">
+                <div class="project-head">
+                    <h3>面向城市商业活力分析与预测的多模态地理空间分析框架</h3>
+
+                    <div class="project-tags">
+                        <span>Yelp</span>
+                        <span>OSMnx</span>
+                        <span>DBSCAN</span>
+                        <span>LightGBM</span>
+                        <span>空间网络分析</span>
+                    </div>
+                </div>
+
+                <p>
+                    融合 POI 数据、用户评论文本、道路网络可达性与空间聚类等多模态数据，构建城市商业活力分析框架。通过 DBSCAN 识别商业集聚区，结合空间网络分析刻画可达性，并采用 LightGBM 进行活力预测与影响因子分析。
+                </p>
+            </div>
+        </article>
+
+        <!-- 项目三：左文字，右图示 -->
+        <article class="project-item project-text-left">
+            <div class="project-copy">
+                <div class="project-head">
+                    <h3>基于北斗网格编码的无人机路径规划及空域管理应用</h3>
+
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>FastAPI</span>
+                        <span>Cesium</span>
+                        <span>A*</span>
+                        <span>DEM</span>
+                        <span>三维路径规划</span>
+                    </div>
+                </div>
+
+                <p>
+                    基于北斗网格编码构建三维空域模型，集成地形 DEM、禁飞区与动态管制信息，采用改进 A* 算法进行无人机三维路径规划。结合 FastAPI 提供服务接口，并通过 Cesium 实现三维可视化展示与空域管理。
+                </p>
+            </div>
+
+            <div class="project-visual">
+                <img src="./assets/projects/project-uav.png" alt="无人机路径规划及空域管理项目图" />
+            </div>
+        </article>
+        </div>
+    </section>
+
+    <!-- 联系方式部分 -->
+    <section class="contact-section section" id="contact">
+        <div class="contact-top-slogan">
+            <span></span>
+            <p>以空间为线索，继续探索数据与世界的连接</p>
+            <span></span>
+        </div>
+
+        <div class="contact-inner">
+            <!-- 左侧结束语 -->
+            <div class="contact-text">
+                <h2>保持联系</h2>
+
+                <div class="contact-title-line">
+                    <span></span>
+                    <i></i>
+        </div>
+
+            <p>
+                感谢你浏览我的个人网站<br />
+                如果你对遥感分析、空间智能<br />
+                或空间数据分析等方向感兴趣<br />
+                欢迎交流想法、分享经验或探讨合作的可能<br />
+                期待与更多志同道合的伙伴<br />
+                一起用空间数据理解世界，创造价值
+            </p>
+        </div>
+
+        <!-- 右侧联系方式卡片 -->
+        <div class="contact-card">
+            <div class="contact-item">
+                <div class="contact-icon">
+                <img src="./assets/icons/icon-email.svg" alt="邮箱图标" />
+            </div>
+
+            <div class="contact-info">
+                <h3>Email</h3>
+                <a href="mailto:3226768664@qq.com">3226768664@qq.com</a>
+            </div>
+
+            <span class="contact-dot"></span>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">
+                <img src="./assets/icons/icon-github.svg" alt="GitHub 图标" />
+            </div>
+
+            <div class="contact-info">
+                <h3>GitHub</h3>
+                <a href="https://github.com/Dong-Z-Student" target="_blank">
+                    https://github.com/Dong-Z-Student
+                </a>
+            </div>
+
+            <span class="contact-dot"></span>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">
+                <img src="./assets/icons/icon-location.svg" alt="位置图标" />
+            </div>
+
+            <div class="contact-info">
+                <h3>Location</h3>
+                <p>China University of Geosciences, Wuhan</p>
+            </div>
+
+            <span class="contact-dot"></span>
+        </div>
+        </div>
+    </div>
+
+    <footer class="contact-footer">
+        <span></span>
+        <p>© 2026 冬 / 朱顺浩</p>
+        <span></span>
+    </footer>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
