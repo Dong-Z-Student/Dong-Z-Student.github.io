@@ -49,11 +49,14 @@ function scrollToSection(targetId) {
 
   const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
+  const isMobile = window.innerWidth <= 768;
+  const extraOffset = isMobile ? 64 : 90;
+
   const targetTop =
     targetSection.getBoundingClientRect().top +
     window.scrollY -
     navbarHeight +
-    112;
+    extraOffset;
 
   window.scrollTo({
     top: targetTop,
@@ -81,9 +84,10 @@ scrollLinks.forEach(function (link) {
 
 function updateActiveNav() {
   let currentId = "";
+  const navThreshold = window.innerWidth <= 768 ? 100 : 144;
 
   sections.forEach(function (section) {
-    const sectionTop = section.offsetTop - 180;
+    const sectionTop = section.offsetTop - navThreshold;
     const sectionHeight = section.offsetHeight;
 
     if (

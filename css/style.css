@@ -23,8 +23,8 @@ body {
 
 /* 顶部导航 */
 .navbar {
-  height: 112px;
-  padding: 24px 76px 0;
+  height: 90px;
+  padding: 19px 60px 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -38,11 +38,11 @@ body {
 .navbar::before {
   content: "";
   position: absolute;
-  left: 28px;
-  right: 28px;
-  top: 14px;
-  height: 78px;
-  border-radius: 20px;
+  left: 22px;
+  right: 22px;
+  top: 11px;
+  height: 62px;
+  border-radius: 16px;
   background:
     linear-gradient(
       180deg,
@@ -50,10 +50,10 @@ body {
       rgba(235, 246, 252, 0.34)
     );
   border: 1px solid rgba(255, 255, 255, 0.68);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   box-shadow:
-    0 14px 36px rgba(65, 95, 125, 0.12),
+    0 11px 29px rgba(65, 95, 125, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.72),
     inset 0 -1px 0 rgba(80, 110, 135, 0.08);
   z-index: 0;
@@ -62,9 +62,9 @@ body {
 .navbar::after {
   content: "";
   position: absolute;
-  left: 52px;
-  right: 52px;
-  top: 91px;
+  left: 42px;
+  right: 42px;
+  top: 73px;
   height: 1px;
   background: linear-gradient(
     90deg,
@@ -81,25 +81,25 @@ body {
   z-index: 2;
 }
 
-/* 左上角“冬” */
+/* 左上角"冬" */
 .logo img {
-  width: 90px;
+  width: 72px;
   height: auto;
   display: block;
-  transform: translateY(-12px);
+  transform: translateY(-10px);
 }
 
 .nav-links {
   display: flex;
-  gap: 84px;
-  padding-top: 12px;
+  gap: 67px;
+  padding-top: 10px;
 }
 
 .nav-links a {
   position: relative;
   color: #25384a;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.04em;
   transition: color 0.25s ease;
 }
@@ -112,9 +112,9 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -22px;
-  width: 38px;
-  height: 3px;
+  bottom: -18px;
+  width: 30px;
+  height: 2px;
   border-radius: 999px;
   transform: translateX(-50%);
   background: linear-gradient(
@@ -123,7 +123,7 @@ body {
     rgba(47, 115, 220, 0.95),
     rgba(47, 115, 220, 0.2)
   );
-  box-shadow: 0 0 12px rgba(47, 115, 220, 0.35);
+  box-shadow: 0 0 10px rgba(47, 115, 220, 0.35);
 }
 
 /* 首页主体 */
@@ -134,7 +134,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 17%;
-  padding-top: 112px;
+  padding-top: 90px;
   background-image: url("../assets/hero-bg.webp");
   background-size: 100% 100%;
   background-position: center;
@@ -145,12 +145,12 @@ body {
 .hero-text {
   position: relative;
   z-index: 3;
-  margin-top: -60px;
+  margin-top: -48px;
 }
 
 .hero-text h1 {
   margin: 0;
-  font-size: 93px;
+  font-size: 74px;
   line-height: 1.22;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -161,59 +161,59 @@ body {
 .hero-divider {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin-top: 28px;
+  gap: 14px;
+  margin-top: 22px;
   color: rgba(70, 110, 140, 0.55);
 }
 
 .hero-divider span {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .hero-divider i {
   display: block;
-  width: 290px;
+  width: 232px;
   height: 1px;
   background: rgba(80, 110, 135, 0.25);
 }
 
 /* 副标题 */
 .hero-text p {
-  margin: 26px 0 0;
-  font-size: 20px;
+  margin: 21px 0 0;
+  font-size: 16px;
   letter-spacing: 0.06em;
   color: rgba(38, 58, 77, 0.82);
 }
 
 /* 按钮 */
 .hero-button {
-  margin-top: 42px;
-  width: 210px;
-  height: 58px;
+  margin-top: 34px;
+  width: 168px;
+  height: 46px;
   border-radius: 999px;
   border: 1px solid rgba(80, 110, 135, 0.35);
   background: rgba(255, 255, 255, 0.18);
   color: #31465a;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.08em;
   text-decoration: none;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: 27px;
 
   cursor: pointer;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(3px);
 }
 
 /* 右侧人物总容器 */
 .figure {
   position: absolute;
   right: 10%;
-  bottom: -250px;
-  width: 800px;
-  height: 900px;
+  bottom: -200px;
+  width: 640px;
+  height: 720px;
   z-index: 2;
 }
 
@@ -247,18 +247,18 @@ body {
 section {
   position: relative;
   min-height: 100vh;
-  scroll-margin-top: 112px;
+  scroll-margin-top: 90px;
 }
 
 /* 关于我部分 */
 .about-section {
   position: relative;
   min-height: 100vh;
-  padding: 120px 9% 80px;
+  padding: 96px 9% 64px;
   display: grid;
   grid-template-columns: 38% 62%;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
   overflow: hidden;
 
   background-image: url("../assets/hero-bg.webp");
@@ -270,32 +270,38 @@ section {
 /* 左侧工牌区域 */
 .about-badge-wrap {
   position: relative;
-  height: 760px;
+  height: 608px;
 }
 
 /* 整个工牌摆动容器，头像和文字都会一起摆 */
 .badge-swing {
+  display: grid;
   position: absolute;
   left: 18%;
-  top: -160px;
-  width: 560px;
+  top: -128px;
+  width: 448px;
   transform-origin: top center;
   animation: badgeSwing 5.2s ease-in-out infinite;
+}
+
+.badge-swing > * {
+  grid-area: 1 / 1;
 }
 
 /* 完整工牌底图 */
 .badge-base {
   width: 100%;
+  height: auto;
   display: block;
-  filter: drop-shadow(0 28px 42px rgba(40, 70, 95, 0.18));
+  filter: drop-shadow(0 22px 34px rgba(40, 70, 95, 0.18));
 }
 
 /* 叠加在工牌上的内容 */
 .badge-content {
-  position: absolute;
-  left: 22%;
-  right: 22%;
-  top: 320px;
+  width: 56%;
+  justify-self: center;
+  align-self: start;
+  margin-top: 56%;
   z-index: 2;
   text-align: center;
   color: #263a4d;
@@ -303,34 +309,31 @@ section {
 
 /* 头像 */
 .badge-avatar-wrap {
-  position: absolute;
-  left: 50%;
-  top: -34px;
-  transform: translateX(-52%);
-  width: 215px;
-  height: 215px;
+  width: 70%;
+  aspect-ratio: 1;
+  margin: -9% auto 0;
 }
 
 .badge-avatar {
-  width: 220px;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow:
-    0 0 0 8px rgba(255, 255, 255, 0.16),
-    0 12px 28px rgba(70, 100, 125, 0.16);
+    0 0 0 6px rgba(255, 255, 255, 0.16),
+    0 10px 22px rgba(70, 100, 125, 0.16);
 }
 
 .badge-info {
-  margin-top: 245px;
+  margin-top: 18%;
 }
 
 /* 姓名 */
 .badge-name {
-  margin: 0 0 18px;
-  font-size: 34px;
+  margin: 0 0 14px;
+  font-size: 27px;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -339,15 +342,15 @@ section {
 
 /* 指标列表 */
 .badge-metrics {
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .metric-row {
-  height: 42px;
+  height: 34px;
   display: grid;
-  grid-template-columns: 30px 1fr auto;
+  grid-template-columns: 24px 1fr auto;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   border-top: 1px dashed rgba(80, 110, 135, 0.24);
   color: #2b4054;
 }
@@ -357,8 +360,8 @@ section {
 }
 
 .metric-icon {
-  width: 26px;
-  height: 26px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   border: 1px solid rgba(80, 110, 135, 0.28);
   background: rgba(255, 255, 255, 0.22);
@@ -366,13 +369,13 @@ section {
   align-items: center;
   justify-content: center;
   color: #557392;
-  font-size: 13px;
+  font-size: 10px;
   flex-shrink: 0;
 }
 
 .metric-icon img {
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   display: block;
   object-fit: contain;
   opacity: 0.88;
@@ -380,18 +383,18 @@ section {
 
 .metric-label {
   text-align: left;
-  font-size: 14px;
+  font-size: 11px;
   letter-spacing: 0.04em;
 }
 
 .metric-value {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
 }
 
 .metric-value small {
-  font-size: 11px;
+  font-size: 9px;
   opacity: 0.8;
 }
 
@@ -402,7 +405,7 @@ section {
   }
 
   25% {
-    transform: rotate(1.1deg) translateY(5px);
+    transform: rotate(1.1deg) translateY(4px);
   }
 
   50% {
@@ -410,7 +413,7 @@ section {
   }
 
   75% {
-    transform: rotate(1.3deg) translateY(4px);
+    transform: rotate(1.3deg) translateY(3px);
   }
 
   100% {
@@ -422,14 +425,14 @@ section {
 .about-text {
   position: relative;
   z-index: 3;
-  max-width: 760px;
-  margin-left: 30px;
+  max-width: 608px;
+  margin-left: 24px;
   color: #263a4d;
 }
 
 .about-text h2 {
   margin: 0;
-  font-size: 104px;
+  font-size: 83px;
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -439,12 +442,12 @@ section {
 .about-title-line {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin: 24px 0 34px;
+  gap: 14px;
+  margin: 19px 0 27px;
 }
 
 .about-title-line span {
-  width: 150px;
+  width: 120px;
   height: 2px;
   background: rgba(55, 85, 110, 0.55);
 }
@@ -458,13 +461,13 @@ section {
 .about-title-line em {
   font-style: normal;
   color: rgba(80, 110, 135, 0.55);
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .about-text p {
   margin: 0;
-  max-width: 760px;
-  font-size: 24px;
+  max-width: 608px;
+  font-size: 19px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: rgba(38, 58, 77, 0.88);
@@ -472,50 +475,50 @@ section {
 
 /* 右侧引用卡片 */
 .about-quote {
-  margin-top: 56px;
-  width: 760px;
-  min-height: 118px;
-  padding: 24px 32px;
+  margin-top: 45px;
+  width: 608px;
+  min-height: 94px;
+  padding: 19px 26px;
   border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 14px;
+  border-radius: 11px;
   background: rgba(255, 255, 255, 0.26);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 18px 35px rgba(60, 90, 115, 0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 14px 28px rgba(60, 90, 115, 0.08);
 
   display: grid;
-  grid-template-columns: 44px 1fr 110px;
+  grid-template-columns: 35px 1fr 88px;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
 }
 
 .quote-mark {
-  font-size: 58px;
+  font-size: 46px;
   line-height: 1;
   color: rgba(45, 75, 105, 0.75);
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 
 .quote-text strong {
   display: block;
-  font-size: 21px;
+  font-size: 17px;
   letter-spacing: 0.08em;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .quote-text span {
   display: block;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 0.06em;
   color: rgba(38, 58, 77, 0.72);
 }
 
 .quote-compass {
-  height: 70px;
+  height: 56px;
   border-left: 1px dashed rgba(80, 110, 135, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 44px;
+  font-size: 35px;
   color: rgba(45, 75, 105, 0.62);
 }
 
@@ -525,7 +528,7 @@ section {
   position: relative;
   height: 100vh;
   min-height: 100vh;
-  padding: 118px 11% 38px;
+  padding: 94px 11% 30px;
   overflow: hidden;
   background-image: url("../assets/hero-bg.webp");
   background-size: 100% 100%;
@@ -550,7 +553,7 @@ section {
 .projects-inner {
   position: relative;
   z-index: 2;
-  max-width: 1460px;
+  max-width: 1168px;
   margin: 0 auto;
 }
 
@@ -559,13 +562,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-bottom: 24px;
+  gap: 26px;
+  margin-bottom: 19px;
 }
 
 .projects-heading h2 {
   margin: 0;
-  font-size: 52px;
+  font-size: 42px;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -573,7 +576,7 @@ section {
 }
 
 .heading-line {
-  width: 78px;
+  width: 62px;
   height: 1px;
   background: rgba(65, 95, 125, 0.42);
 }
@@ -582,20 +585,20 @@ section {
 .project-item {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+  grid-template-columns: minmax(0, 1fr) minmax(336px, 0.9fr);
   align-items: center;
-  gap: 34px;
-  min-height: 250px;
-  margin-bottom: 22px;
-  padding: 26px 32px;
+  gap: 27px;
+  min-height: 200px;
+  margin-bottom: 18px;
+  padding: 21px 26px;
   border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 18px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
   box-shadow:
-    0 18px 36px rgba(65, 95, 125, 0.08),
-    inset 0 0 28px rgba(255, 255, 255, 0.24);
+    0 14px 29px rgba(65, 95, 125, 0.08),
+    inset 0 0 22px rgba(255, 255, 255, 0.24);
   transition:
     transform 0.28s ease,
     box-shadow 0.28s ease,
@@ -608,7 +611,7 @@ section {
 
 /* 第二个项目左右互换 */
 .project-image-left {
-  grid-template-columns: minmax(420px, 0.9fr) minmax(0, 1fr);
+  grid-template-columns: minmax(336px, 0.9fr) minmax(0, 1fr);
 }
 
 /* 文字区域 */
@@ -621,13 +624,13 @@ section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px 14px;
-  margin-bottom: 12px;
+  gap: 8px 11px;
+  margin-bottom: 10px;
 }
 
 .project-head h3 {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.3;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -639,19 +642,19 @@ section {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .project-tags span {
-  min-width: 68px;
-  height: 26px;
-  padding: 0 13px;
+  min-width: 54px;
+  height: 21px;
+  padding: 0 10px;
   border-radius: 999px;
   border: 1px solid rgba(66, 120, 185, 0.42);
   background: rgba(255, 255, 255, 0.34);
   color: #1f62b5;
-  font-size: 13px;
-  line-height: 26px;
+  font-size: 10px;
+  line-height: 21px;
   text-align: center;
   letter-spacing: 0.02em;
   white-space: nowrap;
@@ -659,8 +662,8 @@ section {
 
 .project-copy p {
   margin: 0;
-  max-width: 720px;
-  font-size: 16px;
+  max-width: 576px;
+  font-size: 13px;
   line-height: 1.72;
   letter-spacing: 0.045em;
   color: rgba(38, 58, 77, 0.86);
@@ -670,12 +673,12 @@ section {
 .project-visual {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.58);
   background: rgba(210, 228, 240, 0.28);
   box-shadow:
-    0 18px 34px rgba(42, 72, 100, 0.14),
-    inset 0 0 24px rgba(255, 255, 255, 0.16);
+    0 14px 27px rgba(42, 72, 100, 0.14),
+    inset 0 0 19px rgba(255, 255, 255, 0.16);
 }
 
 .project-visual img {
@@ -685,20 +688,12 @@ section {
   display: block;
 }
 
-/* 轻微悬浮反馈，后续可以删掉或加强 */
-.project-item {
-  transition:
-    transform 0.28s ease,
-    box-shadow 0.28s ease,
-    border-color 0.28s ease;
-}
-
 .project-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: rgba(105, 155, 210, 0.46);
   box-shadow:
-    0 24px 44px rgba(65, 95, 125, 0.13),
-    inset 0 0 32px rgba(255, 255, 255, 0.28);
+    0 19px 35px rgba(65, 95, 125, 0.13),
+    inset 0 0 26px rgba(255, 255, 255, 0.28);
 }
 
 
@@ -707,7 +702,7 @@ section {
   position: relative;
   height: 100vh;
   min-height: 100vh;
-  padding: 132px 9% 56px;
+  padding: 106px 9% 45px;
   overflow: hidden;
 
   background-image: url("../assets/hero-bg.webp");
@@ -736,14 +731,14 @@ section {
   position: absolute;
   right: 10%;
   top: 28%;
-  width: 460px;
-  height: 460px;
+  width: 368px;
+  height: 368px;
   border-radius: 50%;
   border: 1px solid rgba(92, 132, 170, 0.14);
   box-shadow:
-    0 0 0 70px rgba(92, 132, 170, 0.045),
-    0 0 0 140px rgba(92, 132, 170, 0.035),
-    0 0 0 210px rgba(92, 132, 170, 0.025);
+    0 0 0 56px rgba(92, 132, 170, 0.045),
+    0 0 0 112px rgba(92, 132, 170, 0.035),
+    0 0 0 168px rgba(92, 132, 170, 0.025);
   pointer-events: none;
 }
 
@@ -751,25 +746,25 @@ section {
 .contact-top-slogan {
   position: relative;
   z-index: 2;
-  height: 70px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: 27px;
   color: #263a4d;
-  transform: translateY(28px);
+  transform: translateY(22px);
 }
 
 .contact-top-slogan p {
   margin: 0;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 600;
   letter-spacing: 0.14em;
   color: #263a4d;
 }
 
 .contact-top-slogan span {
-  width: 160px;
+  width: 128px;
   height: 1px;
   background: linear-gradient(
     90deg,
@@ -783,8 +778,8 @@ section {
 .contact-inner {
   position: relative;
   z-index: 2;
-  height: calc(100vh - 132px - 56px - 70px);
-  max-width: 1500px;
+  height: calc(100vh - 106px - 45px - 56px);
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 55% 45%;
@@ -794,13 +789,13 @@ section {
 /* 左侧文字 */
 .contact-text {
   padding-left: 8%;
-  transform: translate(34px, -28px);
+  transform: translate(27px, -22px);
   color: #263a4d;
 }
 
 .contact-text h2 {
   margin: 0;
-  font-size: 96px;
+  font-size: 77px;
   line-height: 1.12;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -810,27 +805,27 @@ section {
 .contact-title-line {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin: 34px 0 34px;
+  gap: 11px;
+  margin: 27px 0 27px;
 }
 
 .contact-title-line span {
-  width: 92px;
-  height: 3px;
+  width: 74px;
+  height: 2px;
   border-radius: 999px;
   background: #2f73dc;
 }
 
 .contact-title-line i {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(47, 115, 220, 0.7);
 }
 
 .contact-text p {
   margin: 0;
-  font-size: 23px;
+  font-size: 18px;
   line-height: 1.86;
   letter-spacing: 0.06em;
   color: rgba(38, 58, 77, 0.82);
@@ -840,27 +835,27 @@ section {
 .contact-card {
   position: relative;
   width: 88%;
-  max-width: 650px;
+  max-width: 520px;
   min-height: 5%;
   margin-left: auto;
-  padding: 42px 40px;
-  border-radius: 28px;
+  padding: 34px 32px;
+  border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.72);
   background: rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow:
-    0 24px 48px rgba(65, 95, 125, 0.12),
-    inset 0 0 36px rgba(255, 255, 255, 0.24);
+    0 19px 38px rgba(65, 95, 125, 0.12),
+    inset 0 0 29px rgba(255, 255, 255, 0.24);
 }
 
 .contact-item {
   position: relative;
   display: grid;
-  grid-template-columns: 86px 1fr 18px;
+  grid-template-columns: 69px 1fr 14px;
   align-items: center;
-  gap: 22px;
-  min-height: 138px;
+  gap: 18px;
+  min-height: 110px;
 }
 
 .contact-item:not(:last-child) {
@@ -868,8 +863,8 @@ section {
 }
 
 .contact-icon {
-  width: 72px;
-  height: 72px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -878,20 +873,20 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.72);
   background: rgba(255, 255, 255, 0.34);
   box-shadow:
-    0 14px 28px rgba(70, 100, 125, 0.12),
-    inset 0 0 18px rgba(255, 255, 255, 0.36);
+    0 11px 22px rgba(70, 100, 125, 0.12),
+    inset 0 0 14px rgba(255, 255, 255, 0.36);
 }
 
 .contact-icon img {
-  width: 34px;
-  height: 34px;
+  width: 27px;
+  height: 27px;
   display: block;
   object-fit: contain;
 }
 
 .contact-info h3 {
-  margin: 0 0 12px;
-  font-size: 24px;
+  margin: 0 0 10px;
+  font-size: 19px;
   line-height: 1;
   font-weight: 600;
   color: #1f62b5;
@@ -902,7 +897,7 @@ section {
 .contact-info p {
   margin: 0;
   color: #263a4d;
-  font-size: 21px;
+  font-size: 17px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -913,8 +908,8 @@ section {
 }
 
 .contact-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: rgba(85, 125, 165, 0.56);
 }
@@ -924,13 +919,13 @@ section {
   position: absolute;
   left: 5%;
   right: 5%;
-  bottom: 28px;
+  bottom: 22px;
   z-index: 2;
 
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
 }
 
 .contact-footer span {
@@ -940,7 +935,567 @@ section {
 
 .contact-footer p {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 0.08em;
   color: rgba(38, 58, 77, 0.78);
+}
+
+
+/* ========== 响应式适配 ========== */
+
+/* --- 1200px 以下（小桌面） --- */
+@media (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .about-text h2 {
+    font-size: 66px;
+  }
+
+  .contact-text h2 {
+    font-size: 62px;
+  }
+
+  .badge-swing {
+    width: 380px;
+    top: -100px;
+  }
+
+  .about-badge-wrap {
+    height: 520px;
+  }
+
+  .figure {
+    width: 520px;
+    height: 580px;
+    right: 6%;
+    bottom: -170px;
+  }
+}
+
+/* --- 1024px 以下（平板） --- */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 16px 32px 0;
+  }
+
+  .navbar::before {
+    left: 16px;
+    right: 16px;
+  }
+
+  .navbar::after {
+    left: 32px;
+    right: 32px;
+  }
+
+  .nav-links {
+    gap: 40px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding-left: 8%;
+  }
+
+  .hero-text h1 {
+    font-size: 52px;
+  }
+
+  .hero-divider i {
+    width: 160px;
+  }
+
+  .figure {
+    width: 420px;
+    height: 480px;
+    right: 4%;
+    bottom: -140px;
+  }
+
+  .about-section {
+    grid-template-columns: 42% 58%;
+    gap: 24px;
+    padding: 90px 6% 60px;
+  }
+
+  .about-text h2 {
+    font-size: 54px;
+  }
+
+  .about-text p {
+    font-size: 17px;
+  }
+
+  .about-quote {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .badge-swing {
+    width: 320px;
+    top: -80px;
+  }
+
+  .about-badge-wrap {
+    height: 440px;
+  }
+
+  .badge-name {
+    font-size: 22px;
+  }
+
+  .metric-row {
+    height: 28px;
+  }
+
+  .projects-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 90px 6% 40px;
+  }
+
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: auto;
+  }
+
+  .project-image-left {
+    grid-template-columns: 1fr;
+  }
+
+  .project-visual {
+    order: -1;
+  }
+
+  .project-head h3 {
+    font-size: 18px;
+  }
+
+  .contact-section {
+    padding: 100px 6% 40px;
+  }
+
+  .contact-top-slogan p {
+    font-size: 20px;
+  }
+
+  .contact-inner {
+    grid-template-columns: 50% 50%;
+    max-width: 100%;
+  }
+
+  .contact-text h2 {
+    font-size: 52px;
+  }
+
+  .contact-text p {
+    font-size: 16px;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 24px 26px;
+  }
+
+  .contact-item {
+    min-height: 90px;
+  }
+}
+
+/* --- 768px 以下（手机） --- */
+@media (max-width: 768px) {
+  .navbar {
+    height: 64px;
+    padding: 12px 18px 0;
+  }
+
+  .navbar::before {
+    left: 10px;
+    right: 10px;
+    top: 8px;
+    height: 46px;
+    border-radius: 12px;
+  }
+
+  .navbar::after {
+    display: none;
+  }
+
+  .logo img {
+    width: 52px;
+    transform: translateY(-6px);
+  }
+
+  .nav-links {
+    gap: 18px;
+    padding-top: 6px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-links a.active::after {
+    bottom: -12px;
+    width: 20px;
+    height: 2px;
+  }
+
+  section {
+    scroll-margin-top: 64px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 7% 0;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-divider {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .hero-divider i {
+    width: 80px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
+  .hero-button {
+    margin: 24px auto 0;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    gap: 16px;
+  }
+
+  .figure {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 280px;
+    height: 320px;
+    margin: 20px auto 0;
+  }
+
+  .figure-head {
+    top: -22%;
+  }
+
+  /* 关于我 */
+  .about-section {
+    grid-template-columns: 1fr;
+    padding: 70px 7% 50px;
+    gap: 20px;
+  }
+
+  .about-badge-wrap {
+    height: auto;
+  }
+
+  .badge-swing {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: grid;
+  }
+
+  .badge-base {
+    width: 100%;
+    height: auto;
+  }
+
+  .badge-content {
+    width: 56%;
+    justify-self: center;
+    align-self: start;
+    margin-top: 56%;
+  }
+
+  .badge-avatar-wrap {
+    width: 38%;
+    margin: -6% auto 0;
+  }
+
+  .badge-avatar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .badge-info {
+    margin-top: 44%;
+  }
+
+  .badge-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .about-title-line {
+    justify-content: center;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-quote {
+    width: 100%;
+    min-height: auto;
+    padding: 16px 20px;
+    grid-template-columns: 24px 1fr 50px;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .quote-mark {
+    font-size: 30px;
+  }
+
+  .quote-text strong {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .quote-text span {
+    font-size: 12px;
+  }
+
+  .quote-compass {
+    height: 40px;
+    font-size: 24px;
+  }
+
+  /* 个人项目 */
+  .projects-section {
+    padding: 64px 7% 40px;
+  }
+
+  .projects-heading {
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+
+  .projects-heading h2 {
+    font-size: 30px;
+  }
+
+  .heading-line {
+    width: 40px;
+  }
+
+  .project-item {
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    gap: 14px;
+  }
+
+  .project-head {
+    gap: 6px 8px;
+    margin-bottom: 8px;
+  }
+
+  .project-head h3 {
+    font-size: 16px;
+  }
+
+  .project-tags span {
+    min-width: 42px;
+    height: 18px;
+    padding: 0 8px;
+    font-size: 9px;
+    line-height: 18px;
+  }
+
+  .project-copy p {
+    font-size: 12px;
+  }
+
+  .project-visual {
+    order: -1;
+  }
+
+  /* 联系方式 */
+  .contact-section {
+    padding: 60px 7% 30px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .contact-top-slogan {
+    height: 40px;
+    gap: 14px;
+    transform: translateY(0);
+    margin-bottom: 20px;
+  }
+
+  .contact-top-slogan p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact-top-slogan span {
+    width: 50px;
+  }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 24px;
+  }
+
+  .contact-text {
+    padding-left: 0;
+    transform: none;
+    text-align: center;
+  }
+
+  .contact-text h2 {
+    font-size: 38px;
+  }
+
+  .contact-title-line {
+    justify-content: center;
+    margin: 18px 0;
+  }
+
+  .contact-text p {
+    font-size: 15px;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    padding: 20px 22px;
+    border-radius: 16px;
+  }
+
+  .contact-item {
+    grid-template-columns: 48px 1fr 10px;
+    gap: 14px;
+    min-height: 78px;
+  }
+
+  .contact-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-info h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .contact-info a,
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .contact-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .contact-section::after {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-footer {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .contact-footer p {
+    font-size: 12px;
+  }
+}
+
+/* --- 420px 以下（小屏手机） --- */
+@media (max-width: 420px) {
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .figure {
+    width: 220px;
+    height: 260px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
+
+  .projects-heading h2 {
+    font-size: 24px;
+  }
+
+  .contact-text h2 {
+    font-size: 30px;
+  }
+
+  .contact-top-slogan p {
+    font-size: 14px;
+  }
 }
